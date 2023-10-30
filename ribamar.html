@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ribamar - Informações do Jogador</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Ribamar - Informações do Jogador</h1>
+    <button id="toggle-info">Mostrar/Esconder Informações</button>
+    <div id="info-container" style="display: none;">
+        <p>Informações sobre o jogador Ribamar:</p>
+        <ul>
+            <li>Nome completo: Ribamar Lima dos Santos</li>
+            <li>Posição: Atacante</li>
+            <li>Clubes: Teve passagens por clubes como Botafogo, Vasco da Gama, etc.</li>
+            <li>Data de nascimento: 23 de janeiro de 1997</li>
+        </ul>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("#toggle-info").click(function () {
+                $("#info-container").toggle();
+            });
+        });
+    </script>
+</body>
+</html>

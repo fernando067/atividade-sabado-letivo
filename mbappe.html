@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Informações de Mbappé</title>
+</head>
+
+<body>
+    <h1>Informações de Mbappé</h1>
+    <p>Nome do jogador: <span id="clube"></span></p>
+    <p>Data de nascimento: <span id="fundacao"></span></p>
+    <p>Posição: <span id="treinador"></span></p>
+
+    <script>
+        var data = {
+            "clube": "Kylian Mbappé",
+            "fundacao": "20 de dezembro de 1998",
+            "treinador": "Atacante"
+        };
+
+        document.getElementById("clube").textContent = data.clube;
+        document.getElementById("fundacao").textContent = data.fundacao;
+        document.getElementById("treinador").textContent = data.treinador;
+    </script>
+</body>
+
+</html>

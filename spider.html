@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homem-Aranha</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Homem-Aranha</h1>
+    <button id="toggle-info">Mostrar/Esconder Informações</button>
+    <div id="info-container" style="display: none;">
+        <p>Informações sobre o Homem-Aranha:</p>
+        <ul>
+            <li>Um dos super-heróis mais icônicos da Marvel</li>
+            <li>Criado por Stan Lee e Steve Ditko</li>
+            <li>Famoso por seu traje vermelho e azul e suas habilidades de escalada de paredes</li>
+            <li>Primeira aparição em Amazing Fantasy #15 (1962)</li>
+        </ul>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("#toggle-info").click(function () {
+                $("#info-container").toggle();
+            });
+        });
+    </script>
+</body>
+</html>
